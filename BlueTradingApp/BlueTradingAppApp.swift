@@ -11,7 +11,8 @@ import SwiftUI
 struct BlueTradingAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
+        .windowStyle(HiddenTitleBarWindowStyle())
     }
 }

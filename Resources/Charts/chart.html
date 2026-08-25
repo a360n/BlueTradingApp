@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    html, body, #container {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div id="container"></div>
+  <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+  <script>
+    const chart = LightweightCharts.createChart(document.getElementById('container'), {
+      width: 600,
+      height: 240,
+      layout: {
+        background: { color: '#ffffff' },
+        textColor: '#000',
+      },
+      grid: {
+        vertLines: { color: '#eee' },
+        horzLines: { color: '#eee' },
+      },
+    });
+
+    const lineSeries = chart.addLineSeries();
+
+    // Swift سيقوم بنداء هذا
+    window.updateChartData = function(prices) {
+      const data = JSON.parse(prices);
+      lineSeries.setData(data);
+    };
+  </script>
+</body>
+</html>

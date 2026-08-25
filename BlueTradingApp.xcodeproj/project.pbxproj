@@ -29,9 +29,22 @@
 		53FDD85B2E1BC4A70091C3C0 /* BlueTradingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueTradingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		53FDD8832E1BDD1F0091C3C0 /* Exceptions for "BlueTradingApp" folder in "BlueTradingApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 53FDD8422E1BC4A40091C3C0 /* BlueTradingApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		53FDD8452E1BC4A40091C3C0 /* BlueTradingApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				53FDD8832E1BDD1F0091C3C0 /* Exceptions for "BlueTradingApp" folder in "BlueTradingApp" target */,
+			);
 			path = BlueTradingApp;
 			sourceTree = "<group>";
 		};
@@ -43,6 +56,36 @@
 		53FDD85E2E1BC4A70091C3C0 /* BlueTradingAppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BlueTradingAppUITests;
+			sourceTree = "<group>";
+		};
+		53FDD86E2E1BC7960091C3C0 /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		53FDD86F2E1BC79E0091C3C0 /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		53FDD8702E1BC7A60091C3C0 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		53FDD8712E1BC7AE0091C3C0 /* Services */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		53FDD8722E1BC7B40091C3C0 /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		53FDD87B2E1BC94B0091C3C0 /* Extensions */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +118,12 @@
 		53FDD83A2E1BC4A40091C3C0 = {
 			isa = PBXGroup;
 			children = (
+				53FDD87B2E1BC94B0091C3C0 /* Extensions */,
+				53FDD8722E1BC7B40091C3C0 /* Resources */,
+				53FDD8712E1BC7AE0091C3C0 /* Services */,
+				53FDD8702E1BC7A60091C3C0 /* Models */,
+				53FDD86F2E1BC79E0091C3C0 /* ViewModels */,
+				53FDD86E2E1BC7960091C3C0 /* Views */,
 				53FDD8452E1BC4A40091C3C0 /* BlueTradingApp */,
 				53FDD8542E1BC4A70091C3C0 /* BlueTradingAppTests */,
 				53FDD85E2E1BC4A70091C3C0 /* BlueTradingAppUITests */,
@@ -109,6 +158,12 @@
 			);
 			fileSystemSynchronizedGroups = (
 				53FDD8452E1BC4A40091C3C0 /* BlueTradingApp */,
+				53FDD86E2E1BC7960091C3C0 /* Views */,
+				53FDD86F2E1BC79E0091C3C0 /* ViewModels */,
+				53FDD8702E1BC7A60091C3C0 /* Models */,
+				53FDD8712E1BC7AE0091C3C0 /* Services */,
+				53FDD8722E1BC7B40091C3C0 /* Resources */,
+				53FDD87B2E1BC94B0091C3C0 /* Extensions */,
 			);
 			name = BlueTradingApp;
 			packageProductDependencies = (
@@ -306,7 +361,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -369,7 +424,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -397,7 +452,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlueTradingApp/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -422,7 +479,9 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlueTradingApp/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
